@@ -22,11 +22,11 @@ public class DragAndDropActionTests {
 
         // Проверьте, что прямоугольники действительно поменялись
         $("#column-b").shouldHave(text("A"));
+        $("#column-a").shouldHave(text("B"));
     }
 
     @Test
     void dragAndDropActionSelenide() {
-        sleep(2000);
         // команда $(element).dragAndDrop(to($(element)))
         $("#column-a").dragAndDrop(to($("#column-b")));
         $("#column-b").shouldHave(text("A"));

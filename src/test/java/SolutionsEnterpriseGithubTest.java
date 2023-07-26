@@ -15,6 +15,7 @@ public class SolutionsEnterpriseGithubTest {
         $("#solutions-for-heading").sibling(0).$(byText("Enterprise")).click();
 
         // Убедитесь что загрузилась нужная страница (например что заголовок - "Build like the best."
-        $("h1.h1-mktg.mb-3.color-fg-default").shouldHave(text("Build like the best"));
+        //$("h1.h1-mktg.mb-3.color-fg-default").shouldHave(text("Build like the best"));
+        $(".application-main h1").shouldHave(text("Build like the best"));
     }
 }
